@@ -8,7 +8,6 @@ interface IParams {
 }
 
 export async function POST(request: Request, { params }: { params: IParams }) {
-  console.log(params)
   const currentUser = await getCurrentUser()
 
   if (!currentUser) {
@@ -24,7 +23,6 @@ export async function POST(request: Request, { params }: { params: IParams }) {
   let favoriteIds = [...(currentUser.favoriteIds || [])]
 
   favoriteIds.push(listingId)
-  console.log('hello')
 
   const user = await prisma.user.update({
     where: {

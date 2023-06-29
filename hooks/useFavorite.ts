@@ -36,10 +36,9 @@ const useFavorite = ({ listingId, currentUser }: useFavoriteProps) => {
           request = () => axios.delete(`/api/favorites/${listingId}`)
         } else {
           request = () => axios.post(`/api/favorites/${listingId}`)
-          console.log(listingId)
         }
 
-        await request
+        await request()
 
         router.refresh()
         toast.success('Success')

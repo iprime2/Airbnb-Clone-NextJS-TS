@@ -5,6 +5,7 @@ import {
   LoginModal,
   RentModal,
 } from '@/components'
+import SearchModal from '@/components/modals/SearchModal'
 import './globals.css'
 import { Nunito } from 'next/font/google'
 import ToasterProvider from '@/providers/ToasterProvider'
@@ -31,6 +32,7 @@ export default async function RootLayout({
           <LoginModal />
           <RentModal />
           <RegisterModal />
+          <SearchModal />
           <Navbar currentUser={currentUser} />
         </ClientOnly>
         <div className='pb-20 pt-28'>{children}</div>
