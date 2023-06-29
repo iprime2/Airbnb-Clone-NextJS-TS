@@ -2,7 +2,7 @@
 
 ![Screenshot](demo.png)
 
-Features:
+### Features:
 
 - Tailwind design
 - Tailwind animations and effects
