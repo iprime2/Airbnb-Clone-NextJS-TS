@@ -40,7 +40,7 @@
 ### Cloning the repository
 
 ```shell
-git clone https://github.com/AntonioErdeljac/next13-airbnb-clone.git
+git clone https://github.com/iprime2/Airbnb-Clone-NextJS-TS
 ```
 
 ### Install packages
@@ -64,6 +64,7 @@ NEXTAUTH_SECRET=
 ### Setup Prisma
 
 ```shell
+npx prisma generate
 npx prisma db push
 
 ```
@@ -81,3 +82,5 @@ Running commands with npm `npm run [command]`
 | command         | description                              |
 | :-------------- | :--------------------------------------- |
 | `dev`           | Starts a development instance of the app |
+| `lint`          | Check any javascript error               |
+| `build`         | To build the webapp                      |
